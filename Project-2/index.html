@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+    <h1 id="title">Tour survey</h1>
+    <h2>Thanks for taking your time to answer this survey</h2>
+    </section>
+    <section class="form">
+        <form id="survey-form">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name" name='name' required><br>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your Email" name='email' required><br>
+            <label for="email">Age <span id='optional'>(optional)</span></label><br>
+            <input type="number" id="age" placeholder="age" name='age' min='7' max='150'><br>
+            <label for="options">Choose the option that describes you the best</label><br>
+            <select id="options" placeholder="Select an option" name='options' required>
+                <option value="none" selected disabled hidden id='default'>Choose an option</option>
+                <option value="national tourist">I'm a national tourist</option>
+                <option value="not national tourist">I'm from a different country</option>
+                <option value="first time">It's my first time taking part in a tour</option>
+                <option value="accompanied">I came with someone to this tour</option>
+            </select><br>
+            <label for="recommend">Would you recommend this tour to a friend?</label><br>
+            <label for="first">
+            <input type="radio" name="recommend" id="recommend first" value='definitely' required>Definitely
+            </label><br>
+            <label for="second">
+            <input type="radio" name="recommend" id="recommend second" value='maybe'>Maybe
+            </label><br>
+            <label for="third">
+            <input type="radio" name="recommend" id="recommend third" value='not sure'>Not sure
+            </label><br>
+            <label for="favourite">What was your favoturite part of this tour?</label><br>
+            <select id="favourite" placeholder="Select an option" name='favourite' required>
+                <option value="none" selected disabled hidden id='default'>Choose an option</option>
+                <option value="salsa">The Salsa dances/events</option>
+                <option value="food">The food</option>
+                <option value="hospedation">The hospedation</option>
+                <option value="nature">The nature</option>
+                <option value="culture">The history/culture</option>
+            </select><br>
+            <label for="improve">What would you like to see improved? <span id='check-allthat-apply'>(Check all that apply)</span></label><br>
+            <label for="comunication">
+                <input type="checkbox" id="comunication improve" name="improve" value="comunication">Comunication
+                </label><br>
+            <label for="places">
+                <input type="checkbox" id="places improve" name="improve" value="atention">Places visited
+                </label><br>
+            <label for="management">
+                <input type="checkbox" id="management improve" name="improve" value="management">Management
+                </label><br>
+            <label for="prices">
+                <input type="checkbox" id="prices improve" name="improve" value="prices">Prices
+                </label><br>
+            <label for="management">
+                <input type="checkbox" id="management improve" name="improve" value="management">Management
+                </label><br>
+            <label for="duration">
+                <input type="checkbox" id="duration improve" name="improve" value="duration">Event duration
+                </label><br>
+            <label for="other">
+                <input type="checkbox" id="other improve" for='other-text'>Other:
+                    <input id='other-text other improve' name ='improve'></input></input>
+                </label><br>
+            <label for="comments">How was your experience at visiting Colombia? Comments and suggestions</label><br>
+            <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Enter your text here..."></textarea><br>
+            <input type="submit" id="submit">
+        </form>
+    </section>
+</body>
+</html>

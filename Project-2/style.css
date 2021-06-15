@@ -1,0 +1,20 @@
+html {
+    background-color: white;
+}
+.form {
+    color: white;
+    background-color: rgba(32, 178, 170, 0.75);
+    margin-right: 25rem;
+    margin-left: 25rem;
+}
+.header {
+    background-color: antiquewhite;
+}
+
+body {
+    text-align: center;
+}
+
+form {
+    display: inline;
+}
